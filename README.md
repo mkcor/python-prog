@@ -13,12 +13,16 @@ lessons, which are available under the
   - Python Fundamentals
   - Lists
   - Loops
-  - Coffee break
+  - *Coffee break*
   - Conditionals
   - Writing Functions
 * Afternoon
   - Plotting
   - A web app for free!
-  - Coffee break
+  - *Coffee break*
   - Errors and Exceptions
   - Defensive Programming
+
+## Setup
+
+## References
