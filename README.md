@@ -10,6 +10,7 @@ lessons, which are available under the
 ## Schedule
 
 * Morning
+  - [JupyterLab](./_episodes/00-run-quit.md)
   - Python Fundamentals
   - Lists
   - Loops
