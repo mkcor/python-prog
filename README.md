@@ -11,7 +11,7 @@ lessons, which are available under the
 
 * Morning
   - [JupyterLab](./_episodes/00-run-quit.md)
-  - Python Fundamentals
+  - [Variables](./_episodes/01-variables.md)
   - Lists
   - Loops
   - *Coffee break*
