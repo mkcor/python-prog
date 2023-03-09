@@ -1,5 +1,5 @@
 ---
-title: Assigning values to variables
+title: Assigning Values to Variables
 teaching: 10
 exercises: 10
 questions:
