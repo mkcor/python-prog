@@ -166,6 +166,22 @@ inflam_001 weight in kilograms: 60.3
 ~~~
 {: .output}
 
+> ## Using Formatted String Literals
+>
+> An alternative way of printing the above is to use formatted string
+> literals, which make formatting easier. Also known as "f-strings," they
+> start with an `f` and they contain variables inside of curly braces:
+>
+> ~~~
+> print(f"{patient_id} weight in kilograms: {weight_kg}")
+> ~~~
+> {: .language-python}
+> ~~~
+> inflam_001 weight in kilograms: 60.3
+> ~~~
+> {: .output}
+{: .callout}
+
 We can also call a function inside of another function call.
 For example, Python has a built-in function called `type` that tells us a
 value's data type:
