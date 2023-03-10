@@ -504,5 +504,3 @@ freeing us from having to manually examine every plot for features we've seen be
 {: .challenge}
 
 [abs-function]: https://docs.python.org/3/library/functions.html#abs
-
-{% include links.md %}
