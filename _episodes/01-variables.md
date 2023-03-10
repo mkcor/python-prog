@@ -135,7 +135,20 @@ inflam_001
 
 When we want to make use of a function, which is referred to as _calling_ a
 function, we follow its name by parentheses. The parentheses are important:
-If you leave them off, the function doesn't actually run.
+If you leave them off, the function doesn't actually run:
+
+~~~
+print
+~~~
+{: .language-python}
+~~~
+<built-in function print>
+~~~
+{: .output}
+
+Note that this doesn't cause an error; it just prints out a description of the
+`print` object in Python.
+
 Sometimes we will include values or variables inside the parentheses.
 In the case of `print`, we include what we want to display.
 
