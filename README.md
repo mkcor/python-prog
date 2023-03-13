@@ -12,7 +12,7 @@ lessons, which are available under the
 * Morning
   - [JupyterLab](./_episodes/00-run-quit.md)
   - [Variables](./_episodes/01-variables.md)
-  - Lists
+  - [Lists](./_episodes/02-lists.md)
   - Loops
   - *Coffee break*
   - [Conditionals](./_episodes/04-conditionals.md)
