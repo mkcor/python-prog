@@ -15,7 +15,7 @@ lessons, which are available under the
   - Lists
   - Loops
   - *Coffee break*
-  - Conditionals
+  - [Conditionals](./_episodes/04-conditionals.md)
   - Writing Functions
 * Afternoon
   - Plotting
