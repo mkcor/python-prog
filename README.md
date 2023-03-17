@@ -12,8 +12,8 @@ lessons, which are available under the
 * Morning
   - [JupyterLab](./_episodes/00-run-quit.md)
   - [Variables](./_episodes/01-variables.md)
-  - Lists
-  - Loops
+  - [Lists](./_episodes/02-lists.md)
+  - [Loops](./_episodes/03-loops.md)
   - *Coffee break*
   - Conditionals
   - Writing Functions
