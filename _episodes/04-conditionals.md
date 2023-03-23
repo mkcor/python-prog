@@ -1,5 +1,5 @@
 ---
-title: "Making Choices with Conditionals"
+title: "Conditionals"
 teaching: 10
 exercises: 15
 questions:
@@ -41,7 +41,7 @@ if mass > 3.0:
 ## Conditionals are often used inside loops.
 
 *   Not much point using a conditional when we know the value (as above).
-*   But useful when we have a collection to process.
+*   But useful when we have a sequence to process.
 
 ~~~
 masses = [3.54, 2.07, 9.22, 1.86, 1.71]
