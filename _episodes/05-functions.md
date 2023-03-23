@@ -56,6 +56,8 @@ print_greeting()
 {: .language-python}
 ~~~
 Hello!
+The weather is nice today.
+Right?
 ~~~
 {: .output}
 
@@ -65,8 +67,7 @@ Hello!
 *   Specify *parameters* when defining a function.
     *   These become variables when the function is executed.
     *   Are assigned the arguments in the call (i.e., the values passed to the function).
-    *   If you don't name the arguments when using them in the call, the arguments will be matched to
-parameters in the order the parameters are defined in the function.
+    *   If you don't name the arguments when using them in the call, the arguments will be matched to parameters in the order the parameters are defined in the function.
 
 ~~~
 def print_date(year, month, day):
@@ -256,26 +257,23 @@ result of call is: None
 
 > ## Encapsulation
 >
-> Fill in the blanks to create a function that takes a single filename as an argument,
-> loads the data in the file named by the argument,
-> and returns the minimum value in that data.
+> Fill in the blanks to create a function that takes a list of numbers as an argument,
+> and returns the square of the maximum number in that list.
 >
 > ~~~
-> import pandas as pd
 >
-> def min_in_data(____):
->     data = ____
+> def square_of_max(____):
+>     data_max = ____
 >     return ____
 > ~~~
 > {: .language-python}
 > > ## Solution
 > >
 > > ~~~
-> > import pandas as pd
 > > 
-> > def min_in_data(filename):
-> >     data = pd.read_csv(filename)
-> >     return data.min()
+> > def square_of_max(number_list):
+> >     data_max = max(number_list)
+> >     return data_max**2
 > > ~~~
 > > {: .language-python}
 > {: .solution}
@@ -333,16 +331,12 @@ result of call is: None
 > {: .language-python}
 >
 > 1.  What does `print_date(day=1, month=2, year=2003)` print?
-> 2.  When have you seen a function call like this before?
-> 3.  When and why is it useful to call functions this way?
+> 2.  When and why is it useful to call functions this way?
 >
 > > ## Solution
 > > 
 > > 1. `2003/2/1`
-> > 2. We saw examples of using *named arguments* when working with the pandas library. For example, when reading in a dataset 
-> > using `data = pd.read_csv('data/gapminder_gdp_europe.csv', index_col='country')`, the last argument `index_col` is a 
-> > named argument.  
-> > 3. Using named arguments can make code more readable since one can see from the function call what name the different arguments 
+> > 2. Using named arguments can make code more readable since one can see from the function call what name the different arguments 
 > > have inside the function. It can also reduce the chances of passing arguments in the wrong order, since by using named arguments 
 > > the order doesn't matter.
 > {: .solution}
@@ -422,100 +416,6 @@ result of call is: None
 > {: .solution}
 {: .challenge}
 
-> ## Encapsulating Data Analysis
->
-> Assume that the following code has been executed:
->
-> ~~~
-> import pandas as pd
->
-> df = pd.read_csv('data/gapminder_gdp_asia.csv', index_col=0)
-> japan = df.loc['Japan']
-> ~~~
-> {: .language-python}
->
-> 1. Complete the statements below to obtain the average GDP for Japan
->    across the years reported for the 1980s.
->
->    ~~~
->    year = 1983
->    gdp_decade = 'gdpPercap_' + str(year // ____)
->    avg = (japan.loc[gdp_decade + ___] + japan.loc[gdp_decade + ___]) / 2
->    ~~~
->    {: .language-python}
->
-> 2. Abstract the code above into a single function.
->
->    ~~~
->    def avg_gdp_in_decade(country, continent, year):
->        df = pd.read_csv('data/gapminder_gdp_'+___+'.csv',delimiter=',',index_col=0)
->        ____
->        ____
->        ____
->        return avg
->    ~~~
->    {: .language-python}
->
-> 3. How would you generalize this function
->    if you did not know beforehand which specific years occurred as columns in the data?
->    For instance, what if we also had data from years ending in 1 and 9 for each decade?
->    (Hint: use the columns to filter out the ones that correspond to the decade,
->    instead of enumerating them in the code.)
->
-> > ## Solution
-> >
-> > 1. The average GDP for Japan across the years reported for the 1980s is computed with:
-> >
-> >    ~~~
-> >    year = 1983
-> >    gdp_decade = 'gdpPercap_' + str(year // 10)
-> >    avg = (japan.loc[gdp_decade + '2'] + japan.loc[gdp_decade + '7']) / 2
-> >    ~~~
-> >    {: .language-python}
-> >
-> > 2. That code as a function is:
-> >
-> >    ~~~
-> >    def avg_gdp_in_decade(country, continent, year):
-> >        df = pd.read_csv('data/gapminder_gdp_' + continent + '.csv', index_col=0)
-> >        c = df.loc[country]
-> >        gdp_decade = 'gdpPercap_' + str(year // 10)
-> >        avg = (c.loc[gdp_decade + '2'] + c.loc[gdp_decade + '7'])/2
-> >        return avg
-> >    ~~~
-> >    {: .language-python}
-> >
-> > 3. To obtain the average for the relevant years, we need to loop over them:
-> >
-> >    ~~~
-> >    def avg_gdp_in_decade(country, continent, year):
-> >        df = pd.read_csv('data/gapminder_gdp_' + continent + '.csv', index_col=0)
-> >        c = df.loc[country]
-> >        gdp_decade = 'gdpPercap_' + str(year // 10)
-> >        total = 0.0
-> >        num_years = 0
-> >        for yr_header in c.index: # c's index contains reported years
-> >            if yr_header.startswith(gdp_decade):
-> >                total = total + c.loc[yr_header]
-> >                num_years = num_years + 1
-> >        return total/num_years
-> >    ~~~
-> >    {: .language-python}
-> >
-> > The function can now be called by:
-> >
-> > ~~~
-> > avg_gdp_in_decade('Japan','asia',1983)
-> > ~~~
-> > {: .language-python}
-> > 
-> > ~~~
-> > 20880.023800000003
-> > ~~~
-> > {: .output}
-> {: .solution}
-{: .challenge}
-
 > ## Simulating a dynamical system
 >
 > In mathematics, a [dynamical system](https://en.wikipedia.org/wiki/Dynamical_system) is a system
@@ -581,54 +481,4 @@ result of call is: None
 > >    The population seems to be approaching zero.
 > {: .solution}
 {: .challenge}
-
-> ## Using Functions With Conditionals in Pandas
->
-> Functions will often contain conditionals.  Here is a short example that
-> will indicate which quartile the argument is in based on hand-coded values
-> for the quartile cut points.
->
-> ~~~
-> def calculate_life_quartile(exp):
->     if exp < 58.41:
->         # This observation is in the first quartile
->         return 1
->     elif exp >= 58.41 and exp < 67.05:
->         # This observation is in the second quartile
->        return 2
->     elif exp >= 67.05 and exp < 71.70:
->         # This observation is in the third quartile
->        return 3
->     elif exp >= 71.70:
->         # This observation is in the fourth quartile
->        return 4
->     else:
->         # This observation has bad data
->        return None
->
-> calculate_life_quartile(62.5)
-> ~~~
-> {: .language-python}
->
-> ~~~
-> 2
-> ~~~
-> {: .output}
->
-> That function would typically be used within a `for` loop, but Pandas has
-> a different, more efficient way of doing the same thing, and that is by
-> *applying* a function to a dataframe or a portion of a dataframe.  Here
-> is an example, using the definition above.
->
-> ~~~
-> data = pd.read_csv('data/gapminder_all.csv')
-> data['life_qrtl'] = data['lifeExp_1952'].apply(calculate_life_quartile)
-> ~~~
-> {: .language-python}
->
-> There is a lot in that second line, so let's take it piece by piece.
-> On the right side of the `=` we start with `data['lifeExp']`, which is the
-> column in the dataframe called `data` labeled `lifExp`.  We use the
-> `apply()` to do what it says, apply the `calculate_life_quartile` to the
-> value of this column for every row in the dataframe.
 {: .callout}
