@@ -13,7 +13,7 @@ lessons, which are available under the
   - [JupyterLab](./_episodes/00-run-quit.md)
   - [Variables](./_episodes/01-variables.md)
   - [Lists](./_episodes/02-lists.md)
-  - Loops
+  - [Loops](./_episodes/03-loops.md)
   - *Coffee break*
   - [Conditionals](./_episodes/04-conditionals.md)
   - Writing Functions
