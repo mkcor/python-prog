@@ -10,3 +10,5 @@
 [this episode](https://github.com/swcarpentry/python-novice-gapminder/blob/ace4b4f/_episodes/12-for-loops.md).
 * Episode [Conditionals](./04-conditionals.md) is derived from
 [this episode](https://github.com/swcarpentry/python-novice-gapminder/blob/ace4b4f/_episodes/13-conditionals.md).
+* Episode [Conditionals](./04-conditionals.md) is derived from
+[this episode](https://github.com/swcarpentry/python-novice-gapminder/blob/ace4b4f/_episodes/16-writing-functions.md).
