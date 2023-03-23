@@ -8,5 +8,9 @@
 [this episode](https://github.com/swcarpentry/python-novice-inflammation/blob/5c3ef8d/_episodes/04-lists.md).
 * Episode [Repeating Actions with Loops](./03-loops.md) is derived from
 [this episode](https://github.com/swcarpentry/python-novice-gapminder/blob/ace4b4f/_episodes/12-for-loops.md).
+* Episode [Making Choices with Conditionals](./04-conditionals.md) is derived from
+[this episode](https://github.com/swcarpentry/python-novice-gapminder/blob/ace4b4f/_episodes/13-conditionals.md).
+* Episode [Writing Functions](./05-functions.md) is derived from
+[this episode](https://github.com/swcarpentry/python-novice-gapminder/blob/ace4b4f/_episodes/16-writing-functions.md).
 * Episode [Visualizing Data by Plotting Them](./06-plotting.md) is derived from
 [this episode](https://github.com/swcarpentry/python-novice-gapminder/blob/ace4b4f/_episodes/09-plotting.md).
