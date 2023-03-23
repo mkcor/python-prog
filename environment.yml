@@ -4,5 +4,6 @@ channels:
 dependencies:
   - jupyterlab
   - matplotlib
+  - pandas
   - ipywidgets
   - voila
