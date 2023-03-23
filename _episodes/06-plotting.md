@@ -45,7 +45,7 @@ plt.ylabel('Position (km)')
 ~~~
 {: .language-python}
 
-![Simple Position-Time Plot](../fig/9_simple_position_time_plot.svg)
+![Simple Position-Time Plot](../fig/06_simple_position_time_plot.png)
 
 The Jupyter notebook renders plots inline by default.
 
@@ -167,7 +167,7 @@ df['value_'].hist()
 ~~~
 {: .language-python}
 
-![SST Histogram](../fig/9_.png)
+![SST Histogram](../fig/06_sst_histogram.png)
 
 This implicitly uses `matplotlib.pyplot`.
 
@@ -218,7 +218,7 @@ plt.xlabel('SST (Degrees Celsius)');
 ~~~
 {: .language-python}
 
-![SST Histogram with ggplot styling](../fig/zzz.png)
+![SST Histogram with ggplot styling](../fig/06_sst_histogram_ggplot.png)
 
 We have added semicolons to keep only the actual plot in the output.
 
@@ -229,17 +229,17 @@ plt.hist(df['value_']);
 ~~~
 {: .language-python}
 
-![SST Histogram from plt.plot](../fig/zzz.png)
+![SST Histogram from plt.plot](../fig/06_sst_histogram_plt.png)
 
 The colour can also be specified as an additional optional argument, e.g.,
 `'b'` stands for blue:
 
 ~~~
-plt.hist(df['value_'], color='b');
+df['value_'].hist(color='b');
 ~~~
 {: .language-python}
 
-![SST Histogram in blue](../fig/zzz.png)
+![SST Histogram in blue](../fig/06_sst_histogram_blue.png)
 
 > ## Changing Colours
 >
@@ -250,12 +250,12 @@ plt.hist(df['value_'], color='b');
 > > ## Solution
 > >
 > > ~~~
-> > plt.hist(df['value_'], color='g');
+> > df['value_'].hist(color='g');
 > > plt.xlabel('SST (Degrees Celsius)');
 > > plt.title('SST Measurements from the Celtic Explorer Underway');
 > > ~~~
 > > {: .language-python}
-> > ![SST Histogram in green](../fig/zzz.png)
+> > ![SST Histogram in green](../fig/06_sst_histogram_green.png)
 > {: .solution}
 {: .challenge}
 
