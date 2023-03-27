@@ -131,7 +131,7 @@ pandas.core.series.Series
 What is this dataset about?
 
 ~~~
-df[''description].unique()
+df['description'].unique()
 ~~~
 {: .language-python}
 ~~~
