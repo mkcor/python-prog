@@ -1,5 +1,5 @@
 ---
-title: "Plotting"
+title: "Visualizing Data by Plotting Them"
 teaching: 20
 exercises: 10
 questions:
@@ -12,6 +12,7 @@ objectives:
 - "Add a title and labels for the x-axis and y-axis."
 keypoints:
 - "[`matplotlib`](https://matplotlib.org/) is the most widely used scientific plotting library in Python."
+- "Tabular data is often stored in CSV format."
 - "We can plot data directly from a `pandas` dataframe ([official documentation](https://pandas.pydata.org/docs/user_guide/visualization.html) )."
 - "Many kinds and styles of plots are available."
 - "We can save a plot to a file using the `savefig` function."
