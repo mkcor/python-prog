@@ -84,6 +84,14 @@ oceanographic open data:
 https://data.gov.ie/dataset/celtic-explorer-underway
 Navigate to "available as CSV" and right-click the "Download" button (to copy
 the URL).
+We are passing this URL to `pandas`'s reading function as is, and it just
+works! Alternatively, we could pass the path to a local data file (stored on
+our machine). Note (from the file extension) that the data file is a zipped
+CSV file, so `pandas` takes care of unzipping it first.
+CSV stands for "comma-separated values" and it is a very common format for
+storing tabular data. This open format is both human-readable and
+machine-readable. Sometimes, instead of commas, values are separated by tabs
+(TSV) or semicolons.
 
 ~~~
 url = "http://atlas.marine.ie/midata/OceanFeatures/Celtic_Explorer_Underway.csv.zip"
