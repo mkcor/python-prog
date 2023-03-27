@@ -15,7 +15,7 @@ lessons, which are available under the
   - [Lists](./_episodes/02-lists.md)
   - [Loops](./_episodes/03-loops.md)
   - *Coffee break*
-  - Conditionals
+  - [Conditionals](./_episodes/04-conditionals.md)
   - Writing Functions
 * Afternoon
   - [Plotting](./_episodes/06-plotting.md)
