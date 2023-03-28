@@ -327,6 +327,7 @@ df['value_'].hist(color='b');
 > > table.plot();
 > > ~~~
 > > {: .language-python}
+> >
 > > 3. A scatter plot is more suitable for representing data points. We could
 > >    display a regression line to show the relationship between the two
 > >    series (even if, in this case, it would be trivial!).
