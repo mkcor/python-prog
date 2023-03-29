@@ -434,7 +434,7 @@ result of call is: None
 > 2. Using a `for` or `while` loop, iterate the `logistic_map` function defined in part 1, starting
 >    from an initial population of 0.5, for a period of time `t_final = 10`. Store the intermediate
 >    results in a list so that after the loop terminates you have accumulated a sequence of values
->    representing the state of the logistic map at times `t = [0,1,...,t_final]` (11 values in total).
+>    representing the state of the logistic map at times `t = [0, 1, ..., t_final]` (11 values in total).
 >    Print this list to see the evolution of the population.
 >
 > 3. Encapsulate the logic of your loop into a function called `iterate` that takes the initial
