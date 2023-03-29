@@ -83,7 +83,7 @@ print_date(1871, 3, 19)
 {: .output}
 
 Or, we can name the arguments when we call the function, which allows us to
-specify them in any order and adds clarity to the call site; otherwise, as
+specify them in any order and adds clarity to the call statement; otherwise, as
 one is reading the code they might forget if the second argument is the month
 or the day for example.
 ~~~
