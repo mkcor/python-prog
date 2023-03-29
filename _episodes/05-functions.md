@@ -126,7 +126,8 @@ average of actual values: 2.6666666666666665
 {: .output}
 
 ~~~
-print('average of empty list:', average([]))
+b = average([])
+print('average of empty list:', b)
 ~~~
 {: .language-python}
 ~~~
