@@ -303,7 +303,7 @@ result of call is: None
 > >             return v
 > > ~~~
 > > {: .language-python}
-> > If an empty list or a list with all positive values is passed to this function, it returns `None`:
+> > If an empty list or a list with all non-negative values is passed to this function, it returns `None`:
 > > ~~~
 > > my_list = []
 > > print(first_negative(my_list))
