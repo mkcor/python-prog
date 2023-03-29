@@ -196,7 +196,7 @@ result of call is: None
 > > ~~~ 
 > > {: .output}
 > >
-> > A function call always needs parenthesis, otherwise you get memory address of the function object. So, if we wanted to call the function named report, and give it the value 22.5 to report on, we could have our function call as follows
+> > A function call always needs parentheses, otherwise we get the memory address of the function object. So, if we wanted to call the function named `report`, and give it the value 22.5 to report on, we could have our function call as follows:
 > > ~~~
 > > print("calling")
 > > report(22.5)
