@@ -36,6 +36,7 @@ keypoints:
 *   Then a colon.
 *   Then an indented block of code.
 
+
 ~~~
 def print_greeting():
     print('Hello!')
@@ -135,7 +136,7 @@ average of empty list: None
 ~~~
 {: .output}
 
-*   Remember: [every function returns something]({{ page.root }}/04-built-in/).
+*   Remember: Every function returns something.
 *   A function that doesn't explicitly `return` a value automatically returns `None`.
 
 ~~~
@@ -439,7 +440,7 @@ result of call is: None
 >
 > 3. Encapsulate the logic of your loop into a function called `iterate` that takes the initial
 >    population as its first input, the parameter `t_final` as its second input and the parameter
->    `r` as its third input. The function should return the list of values representing the state of
+>    `r` as its third input. Note that here, we are using 'input' as a synonym for 'argument The function should return the list of values representing the state of
 >    the logistic map at times `t = [0, 1, ..., t_final]`. Run this function for periods `t_final = 100`
 >    and `1000` and print some of the values. Is the population trending toward a steady state?
 >
