@@ -244,7 +244,7 @@ result of call is: None
 > > ## Solution
 > > 
 > > 1. The problem with the example is that the function `print_time()` is defined *after* the call to the function is made. Python
-> > doesn't know how to resolve the name `print_time` since it hasn't been defined yet and will raise a `NameError` e.g.,
+> > doesn't know how to resolve the name `print_time` since it hasn't been defined yet and will raise a `NameError`, i.e.,
 > > `NameError: name 'print_time' is not defined`
 > >
 > > 2. The first line of output `11:37:59` is printed by the first line of code, `result = print_time(11, 37, 59)` that binds the value 
