@@ -17,7 +17,7 @@ keypoints:
 ## Break programs down into functions to make them easier to understand.
 
 *   Human beings can only keep a few items in working memory at a time.
-*   Understand larger/more complicated ideas by understanding and combining pieces.
+*   Handle larger/more complicated ideas by understanding and combining smaller pieces.
     *   Components in a machine.
     *   Lemmas when proving theorems.
 *   Functions serve the same purpose in programs.
