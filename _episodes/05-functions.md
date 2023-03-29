@@ -423,7 +423,7 @@ result of call is: None
 > In mathematics, a [dynamical system](https://en.wikipedia.org/wiki/Dynamical_system) is a system
 > in which a function describes the time dependence of a point in a geometrical space. A canonical
 > example of a dynamical system is the [logistic map](https://en.wikipedia.org/wiki/Logistic_map),
-> a growth model that computes a new population density (between  0 and 1) based on the current
+> a growth model that computes a new population density (between 0 and 1) based on the current
 > density. In the model, time takes discrete values 0, 1, 2, ...
 >
 > 1. Define a function called `logistic_map` that takes two inputs: `x`, representing the current
