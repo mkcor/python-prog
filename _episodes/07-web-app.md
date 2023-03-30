@@ -54,7 +54,7 @@ table.plot();
 ~~~
 {: .language-python}
 
-![Plot of dataframe with two timeseries](../fig/07_....png)
+![Default Dataframe Plot](../fig/07_default_df_plot.png)
 
 Indeed, we get a legend and an `xlabel`... for free! Here, we can see the
 value of working with *labelled* data.
@@ -67,7 +67,7 @@ table['Jane'].plot();
 ~~~
 {: .language-python}
 
-![Plot of one timeseries](../fig/07_....png)
+![Default Timeseries Plot](../fig/07_default_ts_plot.png)
 
 If we wanted to plot the positions only up to a certain time point, say, up to
 the third time point, we would do:
@@ -77,9 +77,9 @@ table[:3].plot();
 ~~~
 {: .language-python}
 
-![Plot of first three positions](../fig/07_....png)
+![Plot for a Subset of Rows](../fig/07_subset_df_plot.png)
 
-## Selecting them Interactively
+## Selecting and Plotting them Interactively
 
 [`ipywidgets`](https://ipywidgets.readthedocs.io/) is a library for exploring
 code and data interactively. We import it as follows:
