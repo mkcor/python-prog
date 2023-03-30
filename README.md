@@ -19,10 +19,7 @@ lessons, which are available under the
   - Writing Functions
 * Afternoon
   - [Plotting](./_episodes/06-plotting.md)
-  - A web app for free!
-  - *Coffee break*
-  - Errors and Exceptions
-  - Defensive Programming
+  - [A web app for free!](./_episodes/07-web-app.md)
 
 ## Setup
 
