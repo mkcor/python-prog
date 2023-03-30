@@ -95,7 +95,7 @@ selecting the runner (Emma or Jane) whose position we want to visualize.
 Likewise, we may use a slider for selecting the end value of the time points.
 
 To begin with, we need to write a function where the parameter is the variable
-we want to control (interact with). In the first case,
+we want to control (interact with). In the first case, this could be simply:
 
 ~~~
 def f(x):
@@ -103,18 +103,37 @@ def f(x):
 ~~~
 {: .language-python}
 
-and, in the second case,
-
-~~~
-def ff(xx):
-    table[:xx].plot();
-~~~
-{: .language-python}
-
-will do. Then, we need to call `interact` with this function as the first
-argument and the variable to control as the second argument:
+Then, we need to call `interact` with this function as the first argument and
+the variable to control as the second argument:
 
 ~~~
 widgets.interact(f, x={'Emma', 'Jane'});
 ~~~
 {: .language-python}
+
+> ## Choosing Descriptive Function and Variable Names
+>
+> 1. Write a function to plot the timeseries up to a given time point.
+> 2. What do you think about the names of your function and its parameter?
+>
+> > ## Solution
+> >
+> > 1. To plot the timeseries (which are the columns of dataframe `table`) up
+> > to time point `xx`, we can use the following function:
+> > ~~~
+> > def ff(xx):
+> >     table[:xx].plot();
+> > ~~~
+> > {: .language-python}
+> >
+> > Here we could have a discussion about whether `xx` is included or not: If
+> > `xx` is a row index, it is excluded (as we have seen in episode 02 on
+> > lists). If `xx` is an actual time value (timestamp), then it is included.
+> >
+> > 2. We have named this function `ff` because we already had a function
+> > named `f` (this habit comes from a sub-culture in the R community). To
+> > make the code easier to understand and maintain, it would be better to
+> > name it, say, `truncate_timeseries`; likewise, the `xx` parameter could be
+> > renamed into, say, `end_time`.
+> {: .solution}
+{: .challenge}
