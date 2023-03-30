@@ -111,6 +111,8 @@ widgets.interact(f, x={'Emma', 'Jane'});
 ~~~
 {: .language-python}
 
+![Screenshot of Interactive Plot with Dropdown](../fig/07_dropdown_screenshot.png)
+
 > ## Choosing Descriptive Function and Variable Names
 >
 > 1. Write a function to plot the timeseries up to a given time point.
@@ -137,3 +139,24 @@ widgets.interact(f, x={'Emma', 'Jane'});
 > > renamed into, say, `end_time`.
 > {: .solution}
 {: .challenge}
+
+To create a slider, we pass the variable an integer:
+
+~~~
+widgets.interact(ff, xx=3);
+~~~
+{: .language-python}
+
+![Screenshot of Interactive Plot with Slider](../fig/07_slider_screenshot.png)
+
+We could combine both filters as follows:
+
+~~~
+def g(x, y):
+    table[x][:y].plot();
+widgets.interact(g,
+                 x={'Emma', 'Jane'},
+                 y=3
+                );
+~~~
+{: .language-python}
