@@ -25,13 +25,13 @@ position of two runners, Emma and Jane.
 import pandas as pd
 
 time = [0, 1, 2, 3]
-position = [0, 100, 200, 300]
+position = [0, 10, 20, 30]
 
 table = pd.DataFrame({'Time': time, 'Emma': position})
 table.set_index('Time', inplace=True)
 
 # Create column for Jane's position
-table['Jane'] = [0, 150, 200, 250]
+table['Jane'] = [0, 15, 20, 25]
 
 print(table)
 ~~~
@@ -40,9 +40,9 @@ print(table)
       Emma  Jane
 Time
 0        0     0
-1      100   150
-2      200   200
-3      300   250
+1       10    15
+2       20    20
+3       30    25
 ~~~
 {: .output}
 
