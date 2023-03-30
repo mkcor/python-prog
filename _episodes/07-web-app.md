@@ -154,9 +154,81 @@ We could combine both filters as follows:
 ~~~
 def g(x, y):
     table[x][:y].plot();
-widgets.interact(g,
-                 x={'Emma', 'Jane'},
-                 y=3
-                );
+
+widgets.interact(
+    g,
+    x={'Emma', 'Jane'},
+    y=3
+);
 ~~~
 {: .language-python}
+
+## Creating a Web App
+
+Now that you have created an interactive data visualization, you may want to
+share it with others, so they can get your point across and/or explore the
+data by themselves. Instead of sharing your Jupyter notebook per se, you can
+use *Voilà* to be able to share it as a web application:
+
+* This is secure (prevents arbitrary code execution);
+* This preserves interactivity (supports Jupyter widgets);
+* This is accessible to non-technical users;
+* This is highly customizable (e.g., with layout templates).
+
+[`voila`](https://voila.readthedocs.io/) is a library for converting
+(rendering) Jupyter notebooks into interactive dashboards.
+Since we have `voila` installed in our environment, we can see a button with
+the *Voilà* logo in the toolbar of our notebooks. Clicking this button takes
+us to a `voila` web app served with the notebook server.
+
+> ## Creating a Good-Looking Interactive Dashboard
+>
+> 1. Open a new notebook and create a Markdown cell: Write "Runners'
+>    Dashboard" as a title.
+> 2. Re-create the interactive plot with a dropdown menu which lets the user
+>    visualize either Emma's or Jane's position over time. Maybe add markers
+>    to the line and fix the lower and upper limits of the y-axis.
+> 3. Render the notebook as a web app.
+>
+> > ## Solution
+> >
+> > 1. Using the dropdown menu in the toolbar, select "Markdown" to change the
+> >    type of the first cell. Type `# Runners' Dashboard` in it.
+> > 2. Create a second cell with the following code in it:
+> > ~~~
+> > import pandas as pd
+> > import ipywidgets as widgets
+> >
+> > time = [0, 1, 2, 3]
+> > position = [0, 10, 20, 30]
+> >
+> > table = pd.DataFrame({'Time': time, 'Emma': position})
+> > table.set_index('Time', inplace=True)
+> >
+> > # Create column for Jane's position
+> > table['Jane'] = [0, 15, 20, 25]
+> >
+> >
+> > def select_runner(runner):
+> >     table[runner].plot(
+> >         marker='*',
+> >         ylim=(0, 40)
+> >     )
+> >
+> > widgets.interact(select_runner, runner={'Emma', 'Jane'});
+> > ~~~
+> > {: .language-python}
+> >
+> > You may need to call `help(table.plot)` to look up the documentation.
+> >
+> > 3. Click the *Voilà* button in the toolbar.
+> {: .solution}
+{: .challenge}
+
+Alternatively, we can use `voila` to create a standalone web application. From
+the terminal, we run `$ voila runner_dash.ipynb` to turn notebook
+`runner_dash.ipynb` into a web app. Note that we don't launch nor run the
+Jupyter notebook by ourselves. At this point, `voila` serves the app locally.
+
+For your users or colleagues to access your web app via a network, you would
+need to *deploy* your app -- which is outside the scope of this lesson.
