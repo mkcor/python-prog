@@ -47,7 +47,7 @@ conda install voila=0.3.6
 5. Install the required packages by running the following lines in your terminal:
 ```
 conda config --add channels conda-forge
-conda install jupyterlab=3.5.3 matplotlib=3.7.0 ipywidgets=7.6.5 voila=0.3.6
+conda install jupyterlab=3.5.3 matplotlib=3.7.0 ipywidgets=7.6.5 voila=0.3.6 pandas=1.5.3
 ```
 
 ## References
