@@ -20,7 +20,7 @@ Please refer to the [Setup](#setup) section to install the required software bef
   - [Conditionals](./_episodes/04-conditionals.md)
   - Writing Functions
 * Afternoon
-  - Plotting
+  - [Plotting](./_episodes/06-plotting.md)
   - A web app for free!
   - *Coffee break*
   - Errors and Exceptions
