@@ -18,7 +18,7 @@ lessons, which are available under the
   - [Conditionals](./_episodes/04-conditionals.md)
   - [Writing Functions](./_episodes/05-functions.md)
 * Afternoon
-  - Plotting
+  - [Plotting](./_episodes/06-plotting.md)
   - A web app for free!
   - *Coffee break*
   - Errors and Exceptions
