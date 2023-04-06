@@ -34,7 +34,7 @@ Please refer to the [Setup](#setup) section to install the required software ahe
 4. On Windows: open the **Anaconda Prompt** from the **Start** menu. On MacOs and Linux: open the **Terminal** app. Install the required packages by running the following lines (copy-paste them in the window that just opened up and press Enter):
 ```
 conda config --add channels conda-forge
-conda install jupyterlab=3.5.3 matplotlib=3.7.0 ipywidgets=7.6.5 voila=0.3.6 pandas=1.5.3
+conda install ipywidgets=7.6.5 jupyterlab=3.5.3 matplotlib=3.7.0 pandas=1.5.3 voila=0.3.6
 ```
 5. Type `jupyter lab` in the Anaconda Prompt / Terminal. After JupyterLab has launched, click the “Python 3” button under “Notebook” in the launcher window, or use the “File” menu, to open a new Python 3 notebook.
 6. To test your setup, run the following lines in a cell of the notebook:
