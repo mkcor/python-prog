@@ -231,4 +231,6 @@ the terminal, we run `$ voila runner_dash.ipynb` to turn notebook
 Jupyter notebook by ourselves. At this point, `voila` serves the app locally.
 
 For your users or colleagues to access your web app via a network, you would
-need to *deploy* your app -- which is outside the scope of this lesson.
+need to *deploy* your app. How to deploy your Voilà app is outside the scope
+of this tutorial; if you would like to give it a try, please refer to the
+`voila` [docs](https://voila.readthedocs.io/en/stable/deploy.html).
