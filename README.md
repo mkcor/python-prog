@@ -24,3 +24,8 @@ lessons, which are available under the
 ## Setup
 
 ## References
+
+* Software Carpentry lesson: [Programming with Python](https://swcarpentry.github.io/python-novice-inflammation/)
+* Software Carpentry lesson: [Plotting and Programming in Python](https://swcarpentry.github.io/python-novice-gapminder/)
+* [Project Jupyter](https://jupyter.org)
+* [Voilà docs](https://voila.readthedocs.io)
