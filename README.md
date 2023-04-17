@@ -21,10 +21,7 @@ Please refer to the [Setup](#setup) section to install the required software ahe
   - [Writing Functions](./_episodes/05-functions.md)
 * Afternoon
   - [Plotting](./_episodes/06-plotting.md)
-  - A web app for free!
-  - *Coffee break*
-  - Errors and Exceptions
-  - Defensive Programming
+  - [A web app for free!](./_episodes/07-web-app.md)
 
 ## Setup
 

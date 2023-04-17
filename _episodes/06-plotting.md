@@ -312,8 +312,9 @@ df['value_'].hist(color='b');
      What does `table.plot();` produce?
 > 2. Plot Position against Time. One way of achieving it is
 >    `table.plot(x='Time', y='Position');`. Another way is
->    `table.set_index('Time').plot();`. In which cases would you favour one or
->     the other?
+>    `table.set_index('Time').plot();`: Note that this turns the
+>    `table['Position']` series into a *timeseries*, i.e., a series indexed in
+>    time order. In which cases would you favour one or the other?
 > 3. What about `table.plot(kind='scatter', x='Time', y='Position');`?
 >
 > > ## Solution
@@ -327,6 +328,7 @@ df['value_'].hist(color='b');
 > > table.plot();
 > > ~~~
 > > {: .language-python}
+> >
 > > 3. A scatter plot is more suitable for representing data points. We could
 > >    display a regression line to show the relationship between the two
 > >    series (even if, in this case, it would be trivial!).
