@@ -1,3 +1,8 @@
+template_repo: "https://github.com/carpentries/styles"
+
+# remote theme
+remote_theme: "https://github.com/carpentries/carpentries-theme"
+
 # Specify that things in the episodes collection should be output.
 collections:
   episodes:
