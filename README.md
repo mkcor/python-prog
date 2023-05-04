@@ -7,7 +7,7 @@ and uses materials from [Software Carpentry](https://software-carpentry.org)
 lessons, which are available under the
 [CC-BY license](https://creativecommons.org/licenses/by/4.0/).
 
-Please refer to the [Setup](#setup) section to install the required software ahead of the tutorial.
+Please refer to the [setup](./setup.md) page to install the required software ahead of the tutorial.
 
 ## Schedule
 
@@ -22,3 +22,10 @@ Please refer to the [Setup](#setup) section to install the required software ahe
 * Afternoon
   - [Plotting](./_episodes/06-plotting.md)
   - [A web app for free!](./_episodes/07-web-app.md)
+
+## References
+
+* Software Carpentry lesson: [Programming with Python](https://swcarpentry.github.io/python-novice-inflammation/)
+* Software Carpentry lesson: [Plotting and Programming in Python](https://swcarpentry.github.io/python-novice-gapminder/)
+* [Project Jupyter](https://jupyter.org)
+* [Voilà docs](https://voila.readthedocs.io)
