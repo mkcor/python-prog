@@ -7,6 +7,8 @@ and uses materials from [Software Carpentry](https://software-carpentry.org)
 lessons, which are available under the
 [CC-BY license](https://creativecommons.org/licenses/by/4.0/).
 
+Please refer to the [setup](./setup.md) page to install the required software ahead of the tutorial.
+
 ## Schedule
 
 * Morning
@@ -16,12 +18,10 @@ lessons, which are available under the
   - [Loops](./_episodes/03-loops.md)
   - *Coffee break*
   - [Conditionals](./_episodes/04-conditionals.md)
-  - Writing Functions
+  - [Writing Functions](./_episodes/05-functions.md)
 * Afternoon
   - [Plotting](./_episodes/06-plotting.md)
   - [A web app for free!](./_episodes/07-web-app.md)
-
-## Setup
 
 ## References
 
