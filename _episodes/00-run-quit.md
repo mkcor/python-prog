@@ -149,7 +149,7 @@ Here is a screenshot of the default main work area:
     <img alt="JupyterLab Main Work Area" src="../fig/0_jupyterlab_main_work_area.png" width="750"/>
 </p>
 
-The main work area in JupyterLab lets you organize documents (notebooks,text
+The main work area in JupyterLab lets you organize documents (notebooks, text
 files, etc.) and other activities (terminals, code consoles, etc.) into panels
 of tabs that can be resized or subdivided.
 Drag a tab to the center of a tab panel to move the tab to this panel.
@@ -184,7 +184,7 @@ current activity is marked with a coloured top border (blue, by default).
 
 Below is a screenshot of a Jupyter notebook running inside JupyterLab. If you
 are interested in more details, please see the
-[official documentation][jupyterlab-notebook-docs].
+[official documentation][https://jupyterlab.readthedocs.io/en/stable/user/notebook.html].
 
 <p align='center'>
     <img alt="Example Jupyter Notebook" src="../fig/0_jupyterlab_notebook_screenshot.png" width="750"/>
@@ -197,6 +197,7 @@ are interested in more details, please see the
 >     one file.
 > *   Just like a web page, what's saved looks different from what you see in
 >     your browser.
+> 
 {: .callout}
 
 > ## Code vs. Text
@@ -206,6 +207,7 @@ are interested in more details, please see the
 > language such as Python."
 > A "code cell" in a notebook is a cell that contains software;
 > a "text cell" is one that contains ordinary prose written for human beings.
+> 
 {: .callout}
 
 ## Switching between Command and Edit Modes
@@ -258,12 +260,12 @@ are interested in more details, please see the
 
 ### Turning Markdown into pretty-printed documentation
 
-*   Jupyter notebooks can also render [Markdown][markdown].
+*   Jupyter notebooks can also render [Markdown][https://en.wikipedia.org/wiki/Markdown].
     Markdown is a simple, plain text format for writing lists, links, and
     other things that might go into a web page. Markdown does most of what
     HTML does.
 *   Turn the current cell into a Markdown cell by entering the Command mode
-    (<kbd>Esc</kbd>/gray) and pressing the <kbd>M</kbd> key.
+    (<kbd>Esc</kbd>/gray) and pressing the <kbd>m</kbd> key.
 *   `In [ ]:` will disappear to show it is no longer a code cell and you are
     able to write in Markdown.
 *   Turn the current cell into a code cell by entering the Command mode
@@ -534,4 +536,5 @@ again from the command line.
 > ## Closing JupyterLab
 >
 > Practice closing and restarting the JupyterLab server.
+> 
 {: .challenge}
