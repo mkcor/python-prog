@@ -355,7 +355,7 @@ last: 4
 > Hint: Remember that indices can be negative as well as positive.
 >
 > > ## Solution
-> > Use negative indices to count elements from the end of a container (such as list or string):
+> > Use negative indices to count elements from the end of a sequence (such as list or string):
 > >
 > > ~~~
 > > string_for_slicing[-4:]
